@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INT.IT</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a
+          href="https://www.leagueoflegends.com/en-us/champions/ashe/"
+          target="_blank"
+          ><div class="logo__image">
+            <img
+              src="logo/ashe.png"
+              width="100"
+              height="100"
+              class="img-fluid"
+            /></div
+        ></a>
+        <div class="navbar__title">
+          <a href="#home" id="navbar__logo"> INT.IT </a>
+        </div>
+        <!-- Navbar Section -->
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="hero">Home</a>
+          </li>
+          <!-- <li class="navbar__item">
+              <a href="#about" class="navbar__links" id="about-page">About</a>
+            </li> -->
+          <li class="navbar__item">
+            <div class="navbar__links" id="randomizer">Randomizer</div>
+            <ul class="randomizer__menu">
+              <li class="randomizer__item" id="champ__randomizer">
+                <a
+                  href="#champ"
+                  class="randomizer__links"
+                  id="champ__randomizer"
+                  >Champ</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading"></h1>
+        <p class="hero__description">nice to lose games</p>
+      </div>
+    </div>
+
+    <div class="diagonal"></div>
+
+    <!-- Champ Section -->
+    <div class="champ__space"></div>
+    <div class="champ__randomizer" id="champ">
+      <div class="champ__container">
+        <div class="selectDisable">
+          <h1 class="champ__heading selectDisable" id="champ">
+            Champion Randomizer
+          </h1>
+          <div class="role__container">
+            <div class="topChamp" onclick="addTop()">
+              <button class="role" id="topRole">
+                <img
+                  id="topImg"
+                  src="positions/Top.png"
+                  width="50"
+                  height="50"
+                />
+              </button>
+            </div>
+            <div class="jglChamp" onclick="addJgl()">
+              <button class="role" id="jglRole">
+                <img
+                  id="jglImg"
+                  src="positions/Jungle.png"
+                  width="50"
+                  height="50"
+                />
+              </button>
+            </div>
+            <div class="midChamp" onclick="addMid()">
+              <button class="role" id="midRole">
+                <img
+                  id="midImg"
+                  src="positions/Mid.png"
+                  width="50"
+                  height="50"
+                />
+              </button>
+            </div>
+            <div class="botChamp" onclick="addBot()">
+              <button class="role" id="botRole">
+                <img
+                  id="botImg"
+                  src="positions/Bot.png"
+                  width="50"
+                  height="50"
+                />
+              </button>
+            </div>
+            <div class="suppChamp" onclick="addSupp()">
+              <button class="role" id="suppRole">
+                <img
+                  id="suppImg"
+                  src="positions/Support.png"
+                  width="50"
+                  height="50"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="clickable" onclick="showChamp()">
+            <button class="btn">
+              <img id="champImg" src="champs/9.jpg" width="308" height="560" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
